@@ -1,0 +1,4 @@
+Sitemap: https://prfraanje.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: prfraanje.github.io
