@@ -24,7 +24,7 @@ SITE_URL = "https://prfraanje.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://prfraanje.github.io/"
-BLOG_EMAIL = "rufus.fraanje@solcon.nl"
+BLOG_EMAIL = "rufus |DOT| fraanje |AT| solcon |DOT| nl"
 BLOG_DESCRIPTION = "Thoughts and findings"  # (translatable)
 
 # Nikola is multilingual!
