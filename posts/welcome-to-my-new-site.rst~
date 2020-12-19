@@ -1,0 +1,11 @@
+.. title: Welcome to my new site
+.. slug: welcome-to-my-new-site
+.. date: 2020-12-19 21:03:39 UTC+01:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+Welcome to my new site, on which I want to write about various topics, such as programming in `Python <https://www.python.org/>`_, control systems, dynamics simulations, and the `Robot Operating System <https://wiki.ros.org/>`_. As a researcher and lecturer at the `Hague University of Applied Sciences <https://www.dehaagsehogeschool.nl/onderzoek/lectoraten/details/smart-sensor-systems#over-het-lectoraat/>`_ besides books and papers also blog posts are an invaluable source of information. I have made several attempts in the past to start a blog myself, but these stranded partly because lack of time and partly because of the complexity of the tools. The `nikola<https://getnikola.com/>`_ static site generator I am using now, has been chosed for its ease of configuration and its ability to embed `jupyter<https://jupyter.org/>`_ notebooks that I may use in posts. If you have comments or questions regaring the contents on my blog, just send me an email or leave a comment when I have the comment system operational.
+
