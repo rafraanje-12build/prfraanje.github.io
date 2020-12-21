@@ -210,13 +210,13 @@ y(t)~=~e^{At}c
 \end{equation*}
 </div>
 <p>where <span class="math">\(c\)</span> a (column) vector having the same dimension and unit as <span class="math">\(y\)</span>, and can be determined when an additional condition on <span class="math">\(y(t)\)</span> for some <span class="math">\(t\)</span> is added, often an initial condition <span class="math">\(y(0)=c\)</span> because <span class="math">\(e^{At}\,=\,I\)</span> for <span class="math">\(t=0\)</span>.</p>
-<p>For the scalar case when <span class="math">\(A\,=\,a\in\mathbb{R}\)</span> or <span class="math">\(\mathbb{C}\)</span> the evolution of <span class="math">\(e^{at}\)</span> is as studied above. For the case <span class="math">\(A\)</span> is a <span class="math">\(2\times2\)</span> matrix or of higher dimension is more complex. However, the scalar case simply extends to the matrix case when <span class="math">\(A\)</span> is a <em>diagonal</em> matrix, i.e. a matrix with arbitrary values <span class="math">\(a_k\)</span> on the diagonal and zeros elsewhere. In this case of diagonal <span class="math">\(A\)</span>, the matrix exponential <span class="math">\(e^{At}\)</span> is a diagonal matrix as well with diagonal elements <span class="math">\(e^{a_kt}\)</span>, similar to the scalar case. In fact, when <span class="math">\(A\)</span> is diagonal the equations in the vector differential equation are not coupled and can be considered as a multiple scalar differential equations.</p>
+<p>For the scalar case when <span class="math">\(A\,=\,a\in\mathbb{R}\)</span> or <span class="math">\(\mathbb{C}\)</span> the evolution of <span class="math">\(e^{at}\)</span> is as studied above. For the case <span class="math">\(A\)</span> is a <span class="math">\(2\times2\)</span> matrix or of higher dimension is more complex. However, the scalar case simply extends to the matrix case when <span class="math">\(A\)</span> is a <em>diagonal</em> matrix, i.e. a matrix with arbitrary values <span class="math">\(a_k\)</span> on the diagonal and zeros elsewhere. In this case of diagonal <span class="math">\(A\)</span>, the matrix exponential <span class="math">\(e^{At}\)</span> is a diagonal matrix as well with diagonal elements <span class="math">\(e^{a_kt}\)</span>, similar to the scalar case. In fact, when <span class="math">\(A\)</span> is diagonal the equations in the vector differential equation are not coupled and can be considered as multiple scalar differential equations.</p>
 <p>More difficult is the situation when one or more <em>off-diagonal</em> elements of <span class="math">\(A\)</span> are nonzero. In this case the matrix should be made <em>diagonal</em> or <em>triangular</em> by making certain transformations, based on the eigenvalue decomposition <a class="footnote-reference brackets" href="#id34" id="id14">14</a> or the Jordan normal form <a class="footnote-reference brackets" href="#id35" id="id15">15</a> respectively. The resulting solutions contain <span class="math">\(e^{\lambda_k t}\)</span> where <span class="math">\(\lambda_k\)</span> an eigenvalue that replaces the <span class="math">\(a\)</span> in the scalar case, and can be:</p>
-<ul class="simple">
+<ol class="arabic simple">
 <li><p>real, equivalent to exponential growth or decay;</p></li>
 <li><p>imaginary, harmonic oscillatory behavior;</p></li>
 <li><p>complex, growing or decaying harmonic oscillatory behavior.</p></li>
-</ul>
+</ol>
 <p>In another blog post, we may go in further detail about this, for now we refer to some youtube-videos of MIT math professor Gilbert Strang on Diagonalizing a Matrix <a class="footnote-reference brackets" href="#id36" id="id16">16</a> and The Matrix Exponential <a class="footnote-reference brackets" href="#id37" id="id17">17</a>.</p>
 <p>In this article we have only considered <em>autonomous</em> systems, i.e. systems without applying external inputs, such as disturbances or controls. Extending to dynamic systems with external inputs will result in the so called State-space representation <a class="footnote-reference brackets" href="#id38" id="id18">18</a>, that may also be the topic of another post.</p>
 <p>I would like to finish this article on the exponential function with poiting to another inspiring YouTube video by Colin Smith on Physics in Clojure <a class="footnote-reference brackets" href="#id39" id="id19">19</a>,
@@ -297,11 +297,11 @@ that ends with a <em>weird trick</em> <a class="footnote-reference brackets" hre
 </dd>
 <dt class="label" id="id39"><span class="brackets"><a class="fn-backref" href="#id19">19</a></span></dt>
 <dd>
-<p><a class="reference external" href="https://youtu.be/7PoajCqNKpg">Phil Colin, Physics in Clojure (YouTube Clojure/West)</a></p>
+<p><a class="reference external" href="https://youtu.be/7PoajCqNKpg">Colin Smith, Physics in Clojure (YouTube Clojure/West)</a></p>
 </dd>
 <dt class="label" id="id40"><span class="brackets"><a class="fn-backref" href="#id20">20</a></span></dt>
 <dd>
-<p><a class="reference external" href="https://youtu.be/7PoajCqNKpg?t=2295">Phil Colin, One weird trick (in: Physics in Clojure at 38:15)</a></p>
+<p><a class="reference external" href="https://youtu.be/7PoajCqNKpg?t=2295">Colin Smith, One weird trick (in: Physics in Clojure at 38:15)</a></p>
 </dd>
 </dl>
 </div>

@@ -123,13 +123,13 @@ The solutions to the vector differential equation have the form
 
 where :math:`c` a (column) vector having the same dimension and unit as :math:`y`, and can be determined when an additional condition on :math:`y(t)` for some :math:`t` is added, often an initial condition :math:`y(0)=c` because :math:`e^{At}\,=\,I` for :math:`t=0`.
 
-For the scalar case when :math:`A\,=\,a\in\mathbb{R}` or :math:`\mathbb{C}` the evolution of :math:`e^{at}` is as studied above. For the case :math:`A` is a :math:`2\times2` matrix or of higher dimension is more complex. However, the scalar case simply extends to the matrix case when :math:`A` is a *diagonal* matrix, i.e. a matrix with arbitrary values :math:`a_k` on the diagonal and zeros elsewhere. In this case of diagonal :math:`A`, the matrix exponential :math:`e^{At}` is a diagonal matrix as well with diagonal elements :math:`e^{a_kt}`, similar to the scalar case. In fact, when :math:`A` is diagonal the equations in the vector differential equation are not coupled and can be considered as a multiple scalar differential equations.
+For the scalar case when :math:`A\,=\,a\in\mathbb{R}` or :math:`\mathbb{C}` the evolution of :math:`e^{at}` is as studied above. For the case :math:`A` is a :math:`2\times2` matrix or of higher dimension is more complex. However, the scalar case simply extends to the matrix case when :math:`A` is a *diagonal* matrix, i.e. a matrix with arbitrary values :math:`a_k` on the diagonal and zeros elsewhere. In this case of diagonal :math:`A`, the matrix exponential :math:`e^{At}` is a diagonal matrix as well with diagonal elements :math:`e^{a_kt}`, similar to the scalar case. In fact, when :math:`A` is diagonal the equations in the vector differential equation are not coupled and can be considered as multiple scalar differential equations.
 
 More difficult is the situation when one or more *off-diagonal* elements of :math:`A` are nonzero. In this case the matrix should be made *diagonal* or *triangular* by making certain transformations, based on the eigenvalue decomposition [#]_ or the Jordan normal form [#]_ respectively. The resulting solutions contain :math:`e^{\lambda_k t}` where :math:`\lambda_k` an eigenvalue that replaces the :math:`a` in the scalar case, and can be:
 
-- real, equivalent to exponential growth or decay;
-- imaginary, harmonic oscillatory behavior;
-- complex, growing or decaying harmonic oscillatory behavior.  
+1. real, equivalent to exponential growth or decay;
+2. imaginary, harmonic oscillatory behavior;
+3. complex, growing or decaying harmonic oscillatory behavior.  
 
 In another blog post, we may go in further detail about this, for now we refer to some youtube-videos of MIT math professor Gilbert Strang on Diagonalizing a Matrix [#]_ and The Matrix Exponential [#]_.
 
@@ -159,8 +159,8 @@ I hope you found this article informative. Please, let me known when you liked i
 .. [#] `Gilbert Strang, Diagonalizing a Matrix (YouTube MIT OpenCourseWare)`_
 .. [#] `Gilbert Strang, The Matrix Exponential (YouTube MIT OpenCourseWare)`_
 .. [#] `Wikipedia: State-space representation`_
-.. [#] `Phil Colin, Physics in Clojure (YouTube Clojure/West)`_
-.. [#] `Phil Colin, One weird trick (in\: Physics in Clojure at 38\:15)`_
+.. [#] `Colin Smith, Physics in Clojure (YouTube Clojure/West)`_
+.. [#] `Colin Smith, One weird trick (in\: Physics in Clojure at 38\:15)`_
 
 .. _Wikipedia\: Exponential function: https://en.wikipedia.org/wiki/Exponential_function
 .. _Wikipedia\: Leonhard Euler: https://en.wikipedia.org/wiki/Leonhard_Euler
@@ -180,5 +180,5 @@ I hope you found this article informative. Please, let me known when you liked i
 .. _Gilbert Strang, Diagonalizing a Matrix (YouTube MIT OpenCourseWare): https://youtu.be/U8R54zOTVLw
 .. _Gilbert Strang, The Matrix Exponential (YouTube MIT OpenCourseWare): https://youtu.be/LwSk9M5lJx4
 .. _Wikipedia\: State-space representation: https://en.wikipedia.org/wiki/State-space_representation
-.. _Phil Colin, Physics in Clojure (YouTube Clojure/West): https://youtu.be/7PoajCqNKpg
-.. _Phil Colin, One weird trick (in\: Physics in Clojure at 38\:15): https://youtu.be/7PoajCqNKpg?t=2295
+.. _Colin Smith, Physics in Clojure (YouTube Clojure/West): https://youtu.be/7PoajCqNKpg
+.. _Colin Smith, One weird trick (in\: Physics in Clojure at 38\:15): https://youtu.be/7PoajCqNKpg?t=2295
