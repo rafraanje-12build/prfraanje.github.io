@@ -94,7 +94,7 @@ Besides the special case of :math:`a=1` leading to the normalized differential e
 The matrix exponential
 ----------------------
 
-The above discussion has been performed for :math:`x` and :math:`y` being scalar quantities and the exponential function being a scalar function. However, the exponential function is not limited to scalars, it can be applied on matrix quantities as well. Therefore, let :math:`X` be a *square* matrix, then the matrix exponential function is defined (similarly as above in the scalar case) by [#]_
+The above discussion has been performed for :math:`x` and :math:`y` being scalar quantities and the exponential function being a scalar function. However, the exponential function is not limited to scalars, it can be applied on other mathematical objects such as a *matrix* as well. Therefore, let :math:`X` be a *square* matrix, then the matrix exponential function is defined (similarly as above in the scalar case) by [#]_
 
 .. math::
    e^X~=~\sum_{n=0}^\infty \frac{X^n}{n!}~=~I + X + \frac{X^2}{2} + \frac{X^3}{6} + \frac{x^4}{24} + \frac{X^5}{120} + \cdots.
@@ -107,7 +107,7 @@ has a beautiful derivative with respect to the scalar quantity :math:`t`, given 
 .. math::
    \frac{\mathrm{d}e^{At}}{\mathrm{d}t}~=~Ae^{At},
 
-which can be verified, similar as in the scalar case, by taking term for term the derivative of the power series of the matrix exponential function. Note, we could have written :math:`\mathrm{d}e^{At}/\mathrm{d}t\,=\,e^{At}A` as well, so :math:`A` commutes with :math:`e^{At}`, though matrix products do not commutative in general! 
+which can be verified, similar as in the scalar case, by taking term for term the derivative of the power series of the matrix exponential function. Note, we could have written :math:`\mathrm{d}e^{At}/\mathrm{d}t\,=\,e^{At}A` as well, so :math:`A` commutes with :math:`e^{At}`, though matrix products do not commute in general! 
 
 This result can be applied to solve *coupled* differential equations, that show up in e.g. linear dynamic systems with multiple lumped components, such as mass-spring-damper systems or RLC-networks in the electrical domain. Often, the differential equations can be ordered in such a way that they can be written in the form of the following vector differential equation
 
@@ -123,9 +123,9 @@ The solutions to the vector differential equation have the form
 
 where :math:`c` a (column) vector having the same dimension and unit as :math:`y`, and can be determined when an additional condition on :math:`y(t)` for some :math:`t` is added, often an initial condition :math:`y(0)=c` because :math:`e^{At}\,=\,I` for :math:`t=0`.
 
-For the scalar case when :math:`A\,=\,a\in\mathbb{R}` or :math:`\mathbb{C}` the evolution of :math:`e^{at}` is as studied above. For the case :math:`A` is a :math:`2\times2` matrix or of higher dimension is more complex. However, the scalar case simply extends to the matrix case when :math:`A` is a *diagonal* matrix, i.e. a matrix with arbitrary values :math:`a_k` on the diagonal and zeros elsewhere. In this case of diagonal :math:`A`, the matrix exponential :math:`e^{At}` is a diagonal matrix as well with diagonal elements :math:`e^{a_kt}`, similar to the scalar case. In fact, when :math:`A` is diagonal the equations in the vector differential equation are not coupled and can be considered as multiple scalar differential equations.
+For the scalar case when :math:`A\,=\,a\in\mathbb{R}` or :math:`\mathbb{C}` the evolution of :math:`e^{at}` is as studied above. The case :math:`A` is a :math:`2\times2` matrix or of higher dimension is more complex. However, the scalar case simply extends to the matrix case when :math:`A` is a *diagonal* matrix, i.e. a matrix with arbitrary values :math:`a_k` on the diagonal and zeros elsewhere. Here, the subscript :math:`k` is an integer referring to the corresponding position on the diagonal of :math:`A`. In this case of diagonal :math:`A`, the matrix exponential :math:`e^{At}` is a diagonal matrix as well with diagonal elements :math:`e^{a_kt}`, similar to the scalar case. In fact, when :math:`A` is diagonal the equations in the vector differential equation are not coupled and can be considered as multiple scalar differential equations.
 
-More difficult is the situation when one or more *off-diagonal* elements of :math:`A` are nonzero. In this case the matrix should be made *diagonal* or *triangular* by making certain transformations, based on the eigenvalue decomposition [#]_ or the Jordan normal form [#]_ respectively. The resulting solutions contain :math:`e^{\lambda_k t}` where :math:`\lambda_k` an eigenvalue that replaces the :math:`a` in the scalar case, and can be:
+More difficult is the situation when one or more *off-diagonal* elements of :math:`A` are nonzero. In this case the matrix should be made *diagonal* or *'almost' diagonal* by making certain transformations, based on the eigenvalue decomposition [#]_ or the Jordan normal form [#]_ respectively. The resulting solutions contain :math:`e^{\lambda_k t}` where :math:`\lambda_k` an *eigenvalue* that has the same meaning as :math:`a` in the scalar case, and can be:
 
 1. real, equivalent to exponential growth or decay;
 2. imaginary, harmonic oscillatory behavior;
