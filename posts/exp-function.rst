@@ -1,10 +1,10 @@
 .. title: The exponential function (exp)
 .. slug: exp-function
 .. date: 2020-12-20 16:49:18 UTC+01:00
-.. tags: 
-.. category: 
+.. tags: exponential, dynamics, quaternion, linear algebra
+.. category: math
 .. link: 
-.. description: 
+.. description: A discussion of various properties and applications of the exponential function including the application to coupled differential equations using the matrix exponential function.
 .. type: text
 .. has_math: true
 
