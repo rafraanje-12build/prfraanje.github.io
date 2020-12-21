@@ -3,7 +3,7 @@
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Thoughts and findings">
+<meta name="description" content="A blog for sharing ideas.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Personal site of Rufus Fraanje</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://prfraanje.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/math-test/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/exp-function/" type="text/html">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
 </head>
 <body>
@@ -66,34 +66,32 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/math-test/" class="u-url">Math test</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/exp-function/" class="u-url">The exponential function (exp)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Rufus Fraanje
             </span></p>
             <p class="dateline">
-            <a href="posts/math-test/" rel="bookmark">
-            <time class="published dt-published" datetime="2020-12-20T16:06:32+01:00" itemprop="datePublished" title="2020-12-20 16:06">2020-12-20 16:06</time></a>
+            <a href="posts/exp-function/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-12-20T16:49:18+01:00" itemprop="datePublished" title="2020-12-20 16:49">2020-12-20 16:49</time></a>
             </p>
                 <p class="commentline">
         
-    <a href="posts/math-test/#disqus_thread" data-disqus-identifier="cache/posts/math-test.html">Comments</a>
+    <a href="posts/exp-function/#disqus_thread" data-disqus-identifier="cache/posts/exp-function.html">Comments</a>
 
 
         </p>
 </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <div>
-<!-- title: Math test -->
-<!-- slug: math-test -->
-<!-- date: 2020-12-20 16:06:32 UTC+01:00 -->
-<!-- tags: -->
-<!-- category: -->
-<!-- link: -->
-<!-- description: -->
-<!-- type: text -->
-<!-- has_math: true -->
-<p>Euler’s formula: <span class="math">\(e^{ix} = \cos x + i\sin x\)</span></p>
+<p>The exponential function <span class="math">\(e^x\)</span>, sometimes written as <span class="math">\(\mathrm{exp}(x)\)</span>, is a famous function with many applications, far more than just exponential growth and decay. It is defined by the power series <a class="footnote-reference brackets" href="posts/exp-function/#id21" id="id1">1</a></p>
+<div class="math">
+\begin{equation*}
+e^x ~=~ \sum_{n=0}^\infty \frac{x^n}{n!} ~=~ 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \frac{x^4}{24} + \frac{x^5}{120}+\cdots
+\end{equation*}
+</div>
+<p>with <span class="math">\(n!\)</span> the faculty of the integer <span class="math">\(n\)</span> and the number <span class="math">\(e\,=\,\sum_{n=0}^\infty \frac{1}{n!}\,\approx\,2.718....\)</span> the constant of Euler, after the Swiss mathematician Leonhard Euler (1707 - 1783) <a class="footnote-reference brackets" href="posts/exp-function/#id22" id="id2">2</a>.</p>
+<p class="more"><a href="posts/exp-function/">Read more…</a></p>
 </div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/welcome-to-my-new-site/" class="u-url">Welcome to my new site</a></h1>
@@ -112,7 +110,7 @@ bg-dark
 
         </p>
 </div>
-    </header><div class="e-content entry-content">
+    </header><div class="p-summary entry-summary">
     <p>Welcome to my new site, at which I want to write about various topics, such as programming, e.g. in <a class="reference external" href="https://www.python.org/">Python</a>, (learning) control systems, dynamics simulations, and the <a class="reference external" href="https://wiki.ros.org/">Robot Operating System (ROS)</a>. As a researcher and lecturer at <a class="reference external" href="https://www.dehaagsehogeschool.nl/onderzoek/lectoraten/details/smart-sensor-systems#over-het-lectoraat/">The Hague University of Applied Sciences</a> besides books and papers also blog posts are an invaluable source of information. I have made several attempts in the past to start a blog myself, but these stranded partly because lack of time and partly because of the complexity of the tools. The <a class="reference external" href="https://getnikola.com/">Nikola</a> static site generator I am using now, has been chosen for its ease of configuration and its ability to embed <a class="reference external" href="https://jupyter.org/">Jupyter</a> notebooks, that I may use in future posts. If you have comments or questions regaring the contents on my blog, just send me an email or leave a comment when I have the comment system operational.</p>
     </div>
     </article>
