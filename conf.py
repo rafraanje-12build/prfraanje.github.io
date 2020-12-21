@@ -25,7 +25,7 @@ SITE_URL = "https://prfraanje.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://prfraanje.github.io/"
 BLOG_EMAIL = "rufus |DOT| fraanje |AT| solcon |DOT| nl"
-BLOG_DESCRIPTION = "Thoughts and findings"  # (translatable)
+BLOG_DESCRIPTION = "A blog for sharing ideas."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -932,7 +932,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
